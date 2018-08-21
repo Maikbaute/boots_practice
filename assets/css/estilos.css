@@ -1,20 +1,19 @@
 html, body, ul, li{
 	margin: 0;
 	padding: 0;
-	font-family: 'Gadugi', 'Arial Narrow', Arial, sans-serif
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 
-#barra-navegacion {
+#barra-navegacion {     /*header*/
 background: #563d7c;
 display: grid;
 grid-template-columns: 3fr 2fr 2fr;
 color:#cbbde2;
-
 }
 
 
-#menu-izquierdo ul {
+#menu-izquierdo ul {  /*home documentation...*/
 height: 50px;
 margin: 5px;
 display: flex;
@@ -40,8 +39,12 @@ color:#ffffff;
 color: #ffffff;
 } 
 
+#menu-izquierdo ul .d-block { /*Logo B*/
+color: #ffffff;
+} 
 
-#menu-derecho ul {
+
+#menu-derecho ul {  /*4.1 Github Twitter...*/
 height: 50px;
 margin: 5px;
 display: flex;
@@ -50,15 +53,20 @@ justify-content: space-around;
 align-items: center;
 }
 
+#menu-derecho ul .d-block:hover {
+color: #ffffff;
+} 
 
-.enlaceboton {    
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 12pt; 
-padding: 10px 14px; 
+
+.enlaceboton {    /*Download*/
+font-family: 'Segoe UI symbol';
+font-size: 11pt; 
+padding: 8px 12px; 
 background-color: none; 
 color: #FFDC67; 
 text-decoration: none; 
 border-radius: 4px;
+font-weight: bold;
 } 
 
 .enlaceboton:link,
@@ -80,16 +88,123 @@ color:#563d7c;
 background: #F3E970;   
 }
 
+main{
+
+	display: grid;
+	font-family: sans-serif;
+	height: 50vh;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+
+	/*especificar posicion de la areas*/
+
+	grid-template-areas:
+		"titulo"
+		"contenido"
+		"botones"
+		"derecha"
+		"footer";
+	
+}
+
+
+main > *{
+	background-color: #cccccc;
+	display: grid;
+	justify-content: none;
+	align-items: center; 
+} 
+
+  
+
+/*Responsive*/
+@media (min-width:500px){
+	main{
+		grid-template-areas:
+			"titulo" 
+			"contenido" "contenido"
+			"derecha" "derecha"
+			"botones" 
+			"botones"
+			"footer"
+	}
+}
+
+
+
+/*Nombrar las areas
+
+header{
+	grid-area: header;
+} 
+*/
+
+
+.articles-1{
+grid-area: titulo;
+}
+
+.articles-2{
+grid-area: contenido;
+}
+
+.buttons{
+	grid-area: botones;
+}
+
+aside:{
+grid-area: derecha;
+ }  
+
+
+footer{
+grid-area: footer;
+margin-left: 100px;
+padding-top: 50px;
+}
+
 
 img{
 width: 500px;
+}
+
+.articles-1{
+color:#7C53B6;
+font-family: 'Segoe UI symbol';
+font-size: 50pt;
+font-weight: bold;
+text-align: left;
+margin-left: 100px;
+}
+
+
+.articles-2{
+color:black;
+font-family: 'Segoe UI symbol';
+font-size: 20px;
+font-weight: normal;
+display:flex;
+/*grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr;*/
+margin-left: 100px;
+padding-bottom: 50px;
+}
+
+.buttons{
+margin-left: 100px;	
+}
+
+
+/*
 height: auto;
 margin: 100px;
 display: grid;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 1fr;
-}
+}*/
 
+
+/*
 .wrapper{
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -99,23 +214,5 @@ margin-top: 1fr;
 }
 
 
-.articles-1{
-color:#7452BA;
-font-family: 'Gadugi', 'Gadugi';
-font-size: 30pt;
-font-weight: normal;
-display:grid;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 1fr;
-}
 
-.articles-2{
-color:gray;
-font-family: 'Gadugi'
-font-size: 12pt;
-font-weight: normal;
-display:grid;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 1fr;
-}
-
+*/
