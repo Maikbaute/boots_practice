@@ -44,6 +44,33 @@ color: #ffffff;
 } 
 
 
+#menu-final_izquierdo ul {  /*GitHub Twitter Examples About*/
+height: 15px;
+margin: 5px;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+align-items: left;
+list-style: none;
+text-decoration: none;
+}
+
+
+#menu-final_izquierdo ul li a{
+text-decoration: none;
+color: #474849;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
 #menu-derecho ul {  /*4.1 Github Twitter...*/
 height: 50px;
 margin: 5px;
@@ -88,6 +115,106 @@ color:#563d7c;
 background: #F3E970;   
 }
 
+
+.enlaceboton-2 {    /*Get started*/
+font-family: 'Segoe UI symbol';
+font-size: 15pt; 
+padding: 15px 80px; 
+background-color: #ffffff; 
+color: #7C53B6; 
+text-decoration: none; 
+border-radius: 4px;
+font-weight: bold;
+} 
+
+.enlaceboton-2:link,
+
+.enlaceboton-2:visited { 
+border-top: 1px solid #7C53B6; 
+border-bottom: 1px solid #7C53B6; 
+border-left: 1px solid #7C53B6; 
+border-right: 1px solid #7C53B6; 
+}
+
+.enlaceboton-2:hover { 
+border-bottom: 1px solid #ccccc; 
+border-top: 2px solid #ccccc; 
+border-right: 1px solid #ccccc; 
+border-left: 2px solid #ccccc; 
+box-shadow: 0px 0px 0px #EDE150;
+color:#ffffff;
+background: #7C53B6;   
+}
+
+
+.enlaceboton-3 {    /*Download*/
+font-family: 'Segoe UI symbol';
+font-size: 15pt; 
+padding: 15px 80px; 
+background-color: #ffffff; 
+color: #909497; 
+text-decoration: none; 
+border-radius: 4px;
+font-weight: bold;
+} 
+
+.enlaceboton-3:link,
+
+.enlaceboton-3:visited { 
+border-top: 1px solid #909497; 
+border-bottom: 1px solid #909497; 
+border-left: 1px solid #909497; 
+border-right: 1px solid #909497; 
+}
+
+.enlaceboton-3:hover { 
+border-bottom: 1px solid #909497; 
+border-top: 2px solid #909497; 
+border-right: 1px solid #909497; 
+border-left: 2px solid #909497; 
+box-shadow: 0px 0px 0px #EDE150;
+color:#ffffff;
+background: #909497;   
+}
+
+
+.enlaceboton-4 {    /*Read installation docs*/
+font-family: 'Segoe UI symbol';
+font-size: 13pt; 
+padding: 10px 10px; 
+background-color: #ffffff; 
+color: #007FFB; 
+text-decoration: none; 
+border-radius: 4px;
+font-weight: normal;
+} 
+
+.enlaceboton-4:link,
+
+.enlaceboton-4:visited { 
+border-top: 1px solid #007FFB; 
+border-bottom: 1px solid #007FFB; 
+border-left: 1px solid #007FFB; 
+border-right: 1px solid #007FFB; 
+}
+
+.enlaceboton-4:hover { 
+border-bottom: 1px solid #007FFB; 
+border-top: 2px solid #007FFB; 
+border-right: 1px solid #007FFB; 
+border-left: 2px solid #007FFB; 
+box-shadow: 0px 0px 0px #007FFB;
+color:#ffffff;
+background: #007FFB;   
+}
+
+
+#buttons_2{
+margin-left: 100px;
+
+}
+
+
 main{
 
 	display: grid;
@@ -95,7 +222,7 @@ main{
 	height: 50vh;
 	grid-gap: 10px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 30em;
 
 
 	/*especificar posicion de la areas*/
@@ -103,6 +230,7 @@ main{
 	grid-template-areas:
 		"titulo"
 		"contenido"
+		"contenido_2"
 		"botones"
 		"derecha"
 		"footer";
@@ -124,8 +252,8 @@ main > *{
 	main{
 		grid-template-areas:
 			"titulo" 
-			"contenido" "contenido"
-			"derecha" "derecha"
+			"contenido" 
+			"contenido_2" "derecha"
 			"botones" 
 			"botones"
 			"footer"
@@ -150,6 +278,12 @@ grid-area: titulo;
 grid-area: contenido;
 }
 
+.articles-3{
+grid-area: contenido_2;
+}
+
+
+
 .buttons{
 	grid-area: botones;
 }
@@ -160,15 +294,26 @@ grid-area: derecha;
 
 
 footer{
-grid-area: footer;
+grid-area: footer;;
 margin-left: 100px;
 padding-top: 50px;
+color: #909497;
 }
 
 
 img{
 width: 500px;
 }
+
+
+.thumb_2{
+width: 150px;	
+}
+
+.thumb_3{
+width: 40px;
+}
+
 
 .articles-1{
 color:#7C53B6;
@@ -191,6 +336,19 @@ grid-template-columns: 1fr 1fr;*/
 margin-left: 100px;
 padding-bottom: 50px;
 }
+
+
+.articles-3{
+color:black;
+font-family: 'Segoe UI symbol';
+font-size: 20px;
+font-weight: normal;
+display:flex;
+margin-left: 100px;
+padding-bottom: 50px;
+}
+
+
 
 .buttons{
 margin-left: 100px;	
