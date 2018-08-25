@@ -5,7 +5,7 @@ html, body, ul, li{
 }
 
 
-#barra-navegacion {     /*header*/
+#encabezado {     /*header*/
 background: #563d7c;
 display: grid;
 grid-template-columns: 3fr 2fr 2fr;
@@ -44,7 +44,7 @@ color: #ffffff;
 } 
 
 
-#menu-final_izquierdo ul {  /*GitHub Twitter Examples About*/
+#menu-del-pie ul {  /*GitHub Twitter Examples About*/
 height: 15px;
 margin: 5px;
 display: flex;
@@ -56,19 +56,11 @@ text-decoration: none;
 }
 
 
-#menu-final_izquierdo ul li a{
+#menu-del-pie ul li a{
 text-decoration: none;
 color: #474849;
 font-weight: bold;
 }
-
-
-
-
-
-
-
-
 
 
 #menu-derecho ul {  /*4.1 Github Twitter...*/
@@ -214,7 +206,7 @@ margin-left: 100px;
 
 }
 
-
+/*
 main{
 
 	display: grid;
@@ -225,7 +217,7 @@ main{
 	grid-template-rows: 30em;
 
 
-	/*especificar posicion de la areas*/
+	/*especificar posicion de la areas
 
 	grid-template-areas:
 		"titulo"
@@ -234,7 +226,6 @@ main{
 		"botones"
 		"derecha"
 		"footer";
-	
 }
 
 
@@ -245,9 +236,9 @@ main > *{
 	align-items: center; 
 } 
 
-  
+/*  
 
-/*Responsive*/
+/*Responsive
 @media (min-width:500px){
 	main{
 		grid-template-areas:
@@ -260,7 +251,7 @@ main > *{
 	}
 }
 
-
+/*
 
 /*Nombrar las areas
 
@@ -270,7 +261,7 @@ header{
 */
 
 
-.articles-1{
+#principal{
 grid-area: titulo;
 }
 
@@ -293,8 +284,8 @@ grid-area: derecha;
  }  
 
 
-footer{
-grid-area: footer;;
+direccion-del-pie{
+grid-area: footer;
 margin-left: 100px;
 padding-top: 50px;
 color: #909497;
@@ -315,7 +306,7 @@ width: 40px;
 }
 
 
-.articles-1{
+#principal{     /*----------ARTICLES-1--------*/
 color:#7C53B6;
 font-family: 'Segoe UI symbol';
 font-size: 50pt;

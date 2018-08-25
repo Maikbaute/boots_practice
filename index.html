@@ -1,20 +1,24 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>emulacion_pagina_bootstrap</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>emulacion_pagina_bootstrap</title>
+<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 </head> 	
 
-<body>
-		
-		<!-- ------------------ BARRA DE NAVEGACION -->
-	<section id="barra-navegacion">
 
-		<!-- ------------------ LADO IZQUIERDO DE LA NAVBAR -->
-		<div id="menu-izquierdo">
+
+
+<body>
+
+<!---------------------- WRAPER DEL ENCABEZADO --> <!-- ------------------ BARRA DE NAVEGACION -->
+	<section id="encabezado">
+
+		<div #id="menu-izquierdo">	<!-------------- LADO IZQUIERDO DE LA NAVBAR -->
+		
+			
 			<ul>
 				<svg class="d-block" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg>
 
@@ -25,11 +29,11 @@
 				<li><a href="#">Blog</a></li>
 			</ul>
 		</div>
-		<!-- ------------------ FIN LADO IZQUIERDO DE LA NAVBAR -->
 
-		<div></div>
-		
-		<!-- ------------------ LADO IZQUIERDO DE LA NAVBAR -->
+		<!---------------- FIN LADO IZQUIERDO DE LA NAVBAR ------------>
+
+				
+		<!---------------- LADO DERECHO DE LA NAVBAR ------------------>
 
 		<div id="menu-derecho">
 			<ul>
@@ -40,7 +44,6 @@
 
 				<svg class="d-block" width="20" height="20" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Slack</title></path><path d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z" fill="currentColor"></path></svg> <!--119-->
 
-
 				<a href="#" class="enlaceboton">Download</a>
 			</ul>
 		</div>
@@ -49,25 +52,19 @@
 	</section>
 		<!-- ------------------ FIN BARRA DE NAVEGACION -->	
 
-	<main>
-		<div class="articles-1">
-        	<article>	
-				<p>Bootstrap</p>
-			</article>
-		</div>	
-
-		<div class="articles-2">
-			<article>
-				<p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.<br><br>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
-			</article>
+	<section id="contenido">	
+		<div id="principal">
+			<p>Bootstrap</p>
+		
+			<p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.<br><br>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
 		</div>		
-		<aside> <!----derecha--->
-			<div>
-				<img class="thumb" src="assets/img/stack.png" alt="stack" title="imagen cortesia de bootstrap"/>
-			</div>
-		</aside>
 
-		<div id="buttons">
+		<div> <!----derecha IMAGEN BOOTSTRAP--->
+			<img class="thumb" src="assets/img/stack.png" alt="stack" title="imagen cortesia de bootstrap"/>
+		</div>
+		
+		
+		<div id="buttons">   <!----ENLACES BOTONES--->
 			<ul>		
 				<a href="#" class="enlaceboton-2">Get - started</a>
 				<a href="#" class="enlaceboton-3">Download</a>
@@ -75,9 +72,6 @@
 			<br>
 			<p>Currently v4.1.3</p>	
 
-			<div>
-				<img class="thumb_2" src="assets/img/slack_white_logo.png" alt="stack_white" title="imagen cortesia de bootstrap_stack"/>
-			</div>
 
 			<article>
 				<p>All the tools your team<br>
@@ -86,12 +80,118 @@
 				ads via Carbon</p>
 			</article>
 		</div>
-		
-		<div>
-			<img class="thumb_3" src="assets/img/down_arrow.svg" alt="down_arrow" title="imagen cortesia de bootstrap_down_arrow"/>
+
+
+
+
+		<div id="tarjeta-miniatura"> <!----TARJETA SLACK--->
+			<div>
+				<img class="thumb_2" src="assets/img/slack_white_logo.png" alt="stack_white" title="imagen cortesia de bootstrap_stack"/>
+			</div>	
+
+			<div>
+				<p>Area en blanco</p>
+			</div>
+		</div>	
+
+
+		<div id="columnas">
+			<div> <!----COLUMNA 1---->
+				<img class="thumb_3" src="assets/img/down_arrow.svg" alt="down_arrow" title="imagen cortesia de bootstrap_down_arrow"/>
+			
+				<article>
+					<p>Installation<br>	
+					Include Bootstrap's source Sass and JavaScript<br>
+					files via npm, Composer or Meteor. Package<br>
+					managed installs don't include documentation,<br>
+					but do include our build system and readme.</p><br>
+			
+					<p>$ npm install bootstrap<br><br>
+
+					$ gem install bootstrap -v 4.1.3</p><br><br>
+				</article>		
+
+				<div id="buttons_2">
+					<ul>		
+						<a href="#" class="enlaceboton-4">Read installation docs</a>
+					</ul>		
+				</div>	
+			</div>
+
+			
+			<div> <!----COLUMNA 2---->
+				<img class="thumb_4" src="assets/img/down_cloud.svg" alt="down_cloud" title="imagen cortesia de bootstrap_down_cloud"/>
+
+				<article>
+					<p>BootstrapCDN<br>
+					When you only need to include Bootstrap's compiled CSS or JS, you can use BootstrapCDN.<br>
+					
+					CSS only</p>
+				</article>
+
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				JS, Popper.js, and jQuery
+				
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+				
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+				<div id="buttons_3">
+					<ul>		
+						<a href="#" class="enlaceboton-5">Explore the docs</a>
+					</ul>		
+				</div>	
+			</div>
+
+			<div> <!----COLUMNA 3---->
+				<img class="thumb_5" src="assets/img/ray.svg" alt="ray" title="imagen cortesia de bootstrap_ray"/>
+			</div>
+
+			<article>
+				<p>Official Themes<br>
+				Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.</p>
+			</article>
+
+			<img class="thumb_6" src="assets/img/themes.png" alt="themes" title="imagen cortesia de bootstrap_themes"/>	
+
+			<div id="buttons_4">
+				<ul>		
+					<a href="#" class="enlaceboton-6">Browse themes</a>
+				</ul>		
+			</div>	
 		</div>
 
-		<div class="articles-3">
+	</section> 
+	<!---------------- FINAL WRAPER DEL CONTENIDO ------------->	
+
+	<!----------------- WRAPER DEL PIE ---------------->
+	
+	<section id="pie">
+
+		<div id="menu-del-pie">	
+			<ul>
+				<li><a href="#">GitHub</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Examples</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>		
+
+		<div id="direccion-del-pie">
+			<p>Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help of our contributors.</p><br>
+			<p>Currently v4.1.3. Code licensed MIT, docs CC BY 3.0.</p>
+		</div>
+	</section>	
+</body>
+</html>
+ 
+
+
+
+		
+	<!--<div class="articles-3">
 			<article>
 				<p>Installation<br>
 				Include Bootstrap's source Sass and JavaScript<br>
@@ -106,27 +206,5 @@
 				_________	
 			</article>
 		</div>	
-		
-		<div id="buttons_2">
-				<ul>		
-					<a href="#" class="enlaceboton-4">Read installation docs</a>
-				</ul>		
-		</div>	
+	-->	
 
-		<div id="menu-final_izquierdo">
-			<ul>
-				<li><a href="#">GitHub</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Examples</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</div>		
-
-		<footer>	
-			<p>Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help of our contributors.</p><br>
-			<p>Currently v4.1.3. Code licensed MIT, docs CC BY 3.0.</p>
-		</footer>	
-	</main>	
-</body>
-</html>
- 
